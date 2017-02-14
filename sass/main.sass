@@ -1,0 +1,164 @@
+//$dark-blue: $dark_blue 
+//$light-blue: $light_blue
+$dark_blue: #1a1a65
+$light_blue: #213784
+
+$light_text: #e0e0e0
+
+html, body, div, p
+	font-family: Roboto, 'Noto Sans', Helvetica, sans
+
+h1, h2, h3, h4,
+.navbar-nav > li
+	font-family: Play, Verdana, Arial, sans
+
+.text-center
+	text-align: center
+
+#formula-logo-path
+	fill: red
+	height: 30px
+	width: 200px
+
+.navbar-nav > li,
+.h1
+	text-transform: uppercase
+
+.dropdown-menu 
+	background-color: $light_blue
+	font-size: 1em
+	transition: background-color .5s
+
+	li > a
+		color: $light_text
+
+a:hover, 
+a:focus
+	color: #0c1444
+
+a
+	color: #223bc5
+
+#news
+	background-color: #FFF
+
+.flex-container
+	display: flex
+	align-items: stretch
+	align-content: stretch
+	flex-wrap: wrap
+
+.news-card
+	margin: 10px 20px
+	padding-bottom: 10px
+	background-color: #EEE
+	box-shadow: 0 0 5px rgba(0,0,0,0.2)
+	h3
+		font-size: 1.2em
+		display: inline-block
+	.more,
+	.date		
+		font-size: 1em
+		opacity: .8
+		float: right
+	.more
+		font-weight: bold	
+		bottom: 0 
+
+	a,
+	a:hover
+		cursor: pointer
+		text-decoration: none
+		margin-top: 3px
+	p
+		margin: 0
+
+.news-button-row
+	padding: 40px 60px
+
+.navbar-inverse
+	background-color: $dark_blue
+	
+	.navbar-nav > li > a 
+		color: $light_text
+
+	.navbar-nav > .active > a,
+	.navbar-nav > .active > a:hover,
+	.navbar-nav > .active > a:focus,
+	.navbar-nav > .open > a, 
+	.navbar-nav > .open > a:hover, 
+	.navbar-nav > .open > a:focus
+		background-color: $light_blue
+
+footer
+	background: $dark_blue
+	color: $light_text
+
+#sponsors
+	padding: 0 100px
+
+.top-sponsors 
+	div:hover
+		transform: scale(1.05)
+		opacity: 1
+		transition: transform 0.5s, opacity 0.5s
+	div
+
+		opacity: .5
+		transition: transform 0.5s, opacity 0.5s
+		a > img
+			width: 100%
+			height: 100%
+//************************************
+//************************************
+//********** MEDIA QUE-QUE-QUERY *****
+//************************************
+//************************************
+@media (min-width: 768px) 
+	.navbar-nav > li > a
+		padding: 25px 20px
+
+	.navbar-nav > li > a > .caret
+		margin: 0
+		margin-left: 2px
+
+	.navbar
+		padding: 0 70px
+		margin-bottom: 0
+
+	.navbar-right 
+		font-size: 1.6em
+
+	#top-one
+		background: url('../images/jumbo-lighten.jpg') no-repeat center 
+		background-size: cover
+		min-height: 700px
+
+	#top-header
+		p
+			margin: 0
+			font-size: 2em
+			font-family: Play, Roboto, Verdana, sans
+			color: white
+			text-transform: uppercase
+		.first
+			font-size: 4em
+		.second
+			font-size: 2em
+		.third
+			font-size: 2.7em
+
+	.mid-align 
+		min-height: inherit
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		
+	footer
+		padding: 25px 0 50px 0
+
+@media (min-width: 992px)
+	.col-md-6-margined
+		width: calc(50% - 30px)
+		margin: 10px 15px
