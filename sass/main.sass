@@ -48,8 +48,12 @@ a
 	align-content: stretch
 	flex-wrap: wrap
 
+.about > p
+	font-size: 1.25em
+
+
 .news-card
-	margin: 10px 20px
+	margin: 0 20px
 	padding-bottom: 10px
 	background-color: #EEE
 	box-shadow: 0 0 5px rgba(0,0,0,0.2)
@@ -72,6 +76,11 @@ a
 		margin-top: 3px
 	p
 		margin: 0
+		font-size: 1.2em
+
+.news-header
+	margin: 8px
+	text-transform: uppercase
 
 .news-button-row
 	padding: 40px 60px
@@ -90,9 +99,7 @@ a
 	.navbar-nav > .open > a:focus
 		background-color: $light_blue
 
-footer
-	background: $dark_blue
-	color: $light_text
+
 
 #sponsors
 	padding: 0 100px
@@ -103,12 +110,60 @@ footer
 		opacity: 1
 		transition: transform 0.5s, opacity 0.5s
 	div
-
 		opacity: .5
 		transition: transform 0.5s, opacity 0.5s
 		a > img
 			width: 100%
 			height: 100%
+
+footer
+	background: $dark_blue
+	color: $light_text
+
+.footer-list
+	list-style: none
+	text-align: left
+	li 
+		margin: 3px 0
+		a
+			line-height: 1.4em
+			color: $light_text
+			img
+				margin-right: 5px
+				width: 1.5em
+				height: 1.5em
+		ul 
+			margin-left: .5em
+			border-left: 1px dotted $light_text
+			padding-left: .5em
+			list-style: none
+
+.contacts > li
+	margin: 10px 0 
+
+p.caret 
+	margin: 0
+.footer-dropdown > ul
+	border-radius: 0
+	
+.cars-row
+	
+	div 
+		img
+			width: 100%
+		img:hover
+			transform: scale(1.03)
+			opacity: 1
+			transition: transform .5s, opacity .5s
+		img
+			opacity: .7
+			transition: transform .5s, opacity .5s
+		
+
+
+
+
+
 //************************************
 //************************************
 //********** MEDIA QUE-QUE-QUERY *****
@@ -159,6 +214,6 @@ footer
 		padding: 25px 0 50px 0
 
 @media (min-width: 992px)
-	.col-md-6-margined
-		width: calc(50% - 30px)
-		margin: 10px 15px
+	//.col-md-5-margined
+		//width: calc(41% - 30px)
+		
