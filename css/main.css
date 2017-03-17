@@ -170,6 +170,33 @@ p.caret {
 .icon-bar {
   margin: 5px 0; }
 
+#top-one {
+  background: url("../images/jumbo-lighten.jpg") no-repeat center; }
+
+#top-header p {
+  filter: none;
+  margin: 0;
+  font-size: 2em;
+  font-family: Play, Roboto, Verdana, sans;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px black; }
+#top-header .first {
+  font-size: 2.4em; }
+#top-header .second {
+  font-size: 1em; }
+#top-header .third {
+  font-size: 1.6em; }
+
+@media (min-width: 320px) {
+  #top-one {
+    padding: 20px 15px;
+    min-height: 300px;
+    filter: blur(1px);
+    background-position: 29% 46%; }
+
+  #top-header {
+    padding: 50px 0; } }
 @media (min-width: 768px) {
   .navbar-nav > li > a {
     padding: 25px 20px; }
@@ -186,7 +213,6 @@ p.caret {
     font-size: 1.6em; }
 
   #top-one {
-    background: url("../images/jumbo-lighten.jpg") no-repeat center;
     background-size: cover;
     min-height: 700px; }
 
