@@ -142,6 +142,9 @@ p.caret {
   opacity: 0.7;
   transition: transform 0.5s, opacity 0.5s; }
 
+.blueish-bg {
+  background: #e7ebf3; }
+
 .donate {
   transition: transform 0.5s, opacity 0.5s; }
   .donate img {
