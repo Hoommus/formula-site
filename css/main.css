@@ -87,9 +87,6 @@ a {
   .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: #213784; }
 
-#sponsors {
-  padding: 0 100px; }
-
 .top-sponsors div:hover {
   transform: scale(1.05);
   opacity: 1;
@@ -170,6 +167,9 @@ p.caret {
   opacity: 1;
   transition: transform 0.5s, opacity 0.5s; }
 
+.icon-bar {
+  margin: 5px 0; }
+
 @media (min-width: 768px) {
   .navbar-nav > li > a {
     padding: 25px 20px; }
@@ -189,6 +189,9 @@ p.caret {
     background: url("../images/jumbo-lighten.jpg") no-repeat center;
     background-size: cover;
     min-height: 700px; }
+
+  #sponsors {
+    padding: 0 100px; }
 
   #top-header p {
     margin: 0;
