@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	
+	$("#top-one").height($(window).height() - 100);
 });
 /*
 var rotation = 0;
