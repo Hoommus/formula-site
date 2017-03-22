@@ -1,7 +1,7 @@
 //$dark-blue: $dark_blue 
 //$light-blue: $light_blue
 $dark_blue: #1a1a65
-$light_blue: #213784
+$light_blue: #252592
 
 $light_text: #e0e0e0
 
@@ -164,7 +164,8 @@ p.caret
 			transition: transform .5s, opacity .5s
 		
 .blueish-bg
-	background: #e7ebf3
+	background: $light_blue
+	color: white
 
 .donate
 	transition: transform .5s, opacity .5s
@@ -180,7 +181,7 @@ p.caret
 		width: calc(100% - 30px)
 		text-align: center
 		color: white
-		text-shadow: 0 0 10px black, 0 0 1px black
+		text-shadow: 0 0 10px black, 2px 2px 1px black
 		font-size: 3em
 		position: absolute
 		top: calc(50% - 1.3em)
@@ -210,11 +211,19 @@ p.caret
 		font-family: Play, Roboto, Verdana, sans
 		color: white
 		text-transform: uppercase
-		text-shadow: 0 0 40px #be57c1, 0 0 5px black
+		text-shadow: 0 0 40px #be57c1, 2px 2px 5px black
 	.second
 		font-size: 1em
 	.third
 		font-size: 1.6em
+
+
+#pause 
+	padding: 15px
+	color: white
+	background: transparent
+	border: none
+
 
 
 //************************************
@@ -281,11 +290,13 @@ p.caret
 		display: flex
 		justify-content: center
 		align-items: center
+		margin-bottom: 60px
 
 
 		
 	footer
 		padding: 25px 0 50px 0
+		border-top: 1px solid $dark_blue
 
 @media (min-width: 992px)
 	#top-header

@@ -21,7 +21,7 @@ h1, h2, h3, h4,
   text-transform: uppercase; }
 
 .dropdown-menu {
-  background-color: #213784;
+  background-color: #252592;
   font-size: 1em;
   transition: background-color 0.5s; }
   .dropdown-menu li > a {
@@ -88,7 +88,7 @@ a {
   .navbar-inverse .navbar-nav > .open > a,
   .navbar-inverse .navbar-nav > .open > a:hover,
   .navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: #213784; }
+    background-color: #252592; }
 
 .top-sponsors div:hover {
   transform: scale(1.05);
@@ -145,7 +145,8 @@ p.caret {
   transition: transform 0.5s, opacity 0.5s; }
 
 .blueish-bg {
-  background: #e7ebf3; }
+  background: #252592;
+  color: white; }
 
 .donate {
   transition: transform 0.5s, opacity 0.5s;
@@ -161,7 +162,7 @@ p.caret {
     width: calc(100% - 30px);
     text-align: center;
     color: white;
-    text-shadow: 0 0 10px black, 0 0 1px black;
+    text-shadow: 0 0 10px black, 2px 2px 1px black;
     font-size: 3em;
     position: absolute;
     top: calc(50% - 1.3em);
@@ -186,11 +187,17 @@ p.caret {
   font-family: Play, Roboto, Verdana, sans;
   color: white;
   text-transform: uppercase;
-  text-shadow: 0 0 40px #be57c1, 0 0 5px black; }
+  text-shadow: 0 0 40px #be57c1, 2px 2px 5px black; }
 #top-header .second {
   font-size: 1em; }
 #top-header .third {
   font-size: 1.6em; }
+
+#pause {
+  padding: 15px;
+  color: white;
+  background: transparent;
+  border: none; }
 
 @media (min-width: 320px) {
   .navbar {
@@ -251,10 +258,12 @@ p.caret {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 60px; }
 
   footer {
-    padding: 25px 0 50px 0; } }
+    padding: 25px 0 50px 0;
+    border-top: 1px solid #1a1a65; } }
 @media (min-width: 992px) {
   #top-header {
     margin-top: -400px; }
