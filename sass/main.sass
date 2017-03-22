@@ -8,6 +8,9 @@ $light_text: #e0e0e0
 html, body, div, p
 	font-family: Roboto, 'Noto Sans', Helvetica, sans
 
+section
+	padding-bottom: 50px
+
 h1, h2, h3, h4,
 .navbar-nav > li
 	font-family: Play, Verdana, Arial, sans
@@ -123,6 +126,7 @@ footer
 .footer-list
 	list-style: none
 	text-align: left
+	padding: 0
 	li 
 		margin: 3px 0
 		a
@@ -176,7 +180,7 @@ p.caret
 		width: calc(100% - 30px)
 		text-align: center
 		color: white
-		text-shadow: 0 0 5px black
+		text-shadow: 0 0 10px black, 0 0 1px black
 		font-size: 3em
 		position: absolute
 		top: calc(50% - 1.3em)
@@ -193,13 +197,14 @@ p.caret
 	margin: 5px 0
 
 #top-one
-	background: url('../images/IMG_1091_22.jpg') no-repeat center bottom
-	background-size: cover
+	//background: url('../images/IMG_1091_22.jpg') no-repeat center bottom
+	//background-size: cover
+	//background-position: center bottom
 
 .first
 	font-size: 2.4em
 #top-header
-	margin-top: -400px
+	
 	p
 		font-size: 2em
 		font-family: Play, Roboto, Verdana, sans
@@ -234,17 +239,20 @@ p.caret
 		background-size: auto 100%
 @media (min-width: 768px) 
 	.navbar-nav > li > a
-		padding: 25px 20px
+		padding: 15px 10px
 
 	.navbar-nav > li > a > .caret
 		margin: 0
 		margin-left: 2px
 
 	.navbar-right 
-		font-size: 1.6em
+		font-size: 1.2em
 	
 	.navbar-brand > img
-		height: 50px
+		height: 40px
+	
+	.navbar-brand
+		padding: 5px 15px
 
 	#top-one 
 		background-size: cover
@@ -273,11 +281,25 @@ p.caret
 		display: flex
 		justify-content: center
 		align-items: center
+
+
 		
 	footer
 		padding: 25px 0 50px 0
 
 @media (min-width: 992px)
+	#top-header
+		margin-top: -400px
+
+	.navbar-nav > li > a
+		padding: 25px 20px
+
+	.navbar-right 
+		font-size: 1.6em
+	
+	.navbar-brand > img
+		height: 60px
+
 	//.col-md-5-margined
 		//width: calc(41% - 30px)
 		
