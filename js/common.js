@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$("#pause").fadeOut(1);
 	$("#top-one").height($(window).height() - 120);
-	setTimeout(() => {
+	/* setTimeout(() => {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		} else {
 			$(".parallax-mirror").append('<iframe id="vimeo_player" src="https://player.vimeo.com/video/45196609?loop=1&title=0&byline=0&portrait=0" width=100% height=100% frameborder="0"></iframe>');
@@ -9,13 +9,15 @@ $(document).ready(function() {
 			let iframe = document.querySelector('#vimeo_player'),
             player = new Vimeo.Player(iframe);
 
-            player.ready().then( function() {
+            player.ready().then( () => {
                 player.setVolume(0.15);
 
                 $(".parallax-slider").fadeOut();
 
                 $("#pause").on('click', (e) => {
                 	player.pause();
+                	$(".parallax-slider").fadeIn();
+                	$("#pause").fadeOut();
                 })
                 $("#pause").fadeIn();
                 player.play();
@@ -23,17 +25,6 @@ $(document).ready(function() {
 		}
 
 	}, 1000)
-	
+	*/
 
 });
-/*
-var rotation = 0;
-var myVar = setInterval( function() {
-		let arr = document.getElementsByClassName("nim-dialog");
-		for(let i = 0; i < arr.length; i++) {
-			arr[i].style.transform = "rotate(" + rotation + "deg)";
-		}
-		rotation = rotation + 4;
-		console.log("loop");
-	}, 1);
-*/

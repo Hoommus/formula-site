@@ -18,12 +18,12 @@
 				<p class="icon-bar"></p>
 				<p class="icon-bar"></p>
 			</button>
-			<a class="navbar-brand" href="#"> <img src="images/fskpi_logo_en.png" alt=""> </a>
+			<a class="navbar-brand" href="index.html"> <img src="images/fskpi_logo_en.png" alt=""> </a>
 		</div>
 		<!-- .navbar-header -->
 		<div id="topnavbar" class="navbar-right collapse navbar-collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
+				<li class="active"><a href="index.html">Home</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seasons <p class="caret"></p></a>
 					<ul class="dropdown-menu">
@@ -31,8 +31,8 @@
 						<li><a href="season 2.html">Second season</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Sponsors</a></li>
-				<li><a href="#">Media about us</a></li>
+				<li><a href="sponsors.html">Sponsors</a></li>
+				<li><a href="media-about.html">Media about us</a></li>
 				<li><a href="#">Contacts</a></li>
 			</ul>
 		</div>
@@ -111,7 +111,33 @@
 		</div>
 	</section>
 
-	<section id="sponsors" class="container-fluid" >
+	
+
+	<section class="blueish-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="h1 text-center">Media</h1>
+				</div>
+			</div>
+			<div class="row cars-row">
+				<div class="col-md-3">
+					<img src="images/first-car.jpg" alt="">
+				</div>
+				<div class="col-md-3">
+					<img src="images/second-car.jpg" alt="">
+				</div>
+				<div class="col-md-3">
+					<img src="images/second-car.jpg" alt="">
+				</div>
+				<div class="col-md-3">
+					<img src="images/second-car.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+<section id="sponsors" class="container-fluid" >
 		<div class="row">
 			<div class="col-md-12">
 				<h1 class="h1 text-center">Our Partners</h1>
@@ -158,30 +184,6 @@
 		</div>
 	</section>
 
-	<section class="blueish-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h1 class="h1 text-center">Media</h1>
-				</div>
-			</div>
-			<div class="row cars-row">
-				<div class="col-md-3">
-					<img src="images/first-car.jpg" alt="">
-				</div>
-				<div class="col-md-3">
-					<img src="images/second-car.jpg" alt="">
-				</div>
-				<div class="col-md-3">
-					<img src="images/second-car.jpg" alt="">
-				</div>
-				<div class="col-md-3">
-					<img src="images/second-car.jpg" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-	
 	<footer class="container-fluid">
 		<div class="row">
 			<div class="container text-center">
@@ -206,32 +208,42 @@
 					<ul class="footer-list">
 						<li><a href="vk.com"><img src="images/vk-logo.svg" alt="">VK</a></li>
 						<li><a href="facebook.com"><img src="images/facebook-logo.svg" alt="">Facebook</a></li>
-						<li><a href="youtube.com"><img src="images/youtube-logo.svg" alt="">Youtube</a></li>
+						<li><a href="youtube.com"><img src="images/YouTube-icon.svg" alt="">Youtube</a></li>
+						<li><a href="youtube.com"><img src="images/instagram-logo.svg" alt="">Instagram</a></li>
 					</ul>	
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4" >
 					<h3>Contacts</h3>
 					<ul class="contacts footer-list">
 						<li>Some tel <br>+38 (097) 979 79 79</li>
 						<li><a href="mailto:formulakpi@gmail.com">formulakpi@gmail.com</a></li>
-						<li>Like <br>+38 (097) 979 79 79</li>
-						<li>Favourite <br>+38 (097) 979 79 78</li>
+						<li><a class="btn btn-warning">Join the team</a></li>
 					</ul>
-					<div class="dropdown">
-						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Language
-						<span class="caret"></span></button>
-						<ul class="dropdown-menu">
-							<li><a href="#">English</a></li>
-							<li><a href="#">Ukrainian</a></li>
-						</ul>
-					</div>
 				</div>
 				
 			</div>
-			<center><a href="https://github.com/Hoommus/formula-site">К репозиторию</a></center>
+		</div><!-- .row  -->
+		<div class="row mid-align really-footer">
+			<div class="col-md-4">
+				<p>(c) Copyright. Proudly powered by Wordpress (not yet)</p>
+			</div>
+			<div class="col-md-6" style="text-align: right;">
+				<a class="btn dark" href="https://github.com/Hoommus/formula-site">К репозиторию</a>
+			</div>
+			<div class="col-md-2">
+				<div class="dropup language">
+					<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Language
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#"><img src="images/UK-flag.png" alt="">English</a></li>
+						<li><a href="#"><img src="images/Ukraine-flag.png" alt="">Ukrainian</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
+	</footer> 
+<!-- .container-fluid -->
 
-	</footer>
 	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script src="https://player.vimeo.com/api/player.js"></script>
