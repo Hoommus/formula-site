@@ -103,6 +103,8 @@ a
 	.navbar-nav > .open > a:hover, 
 	.navbar-nav > .open > a:focus
 		background-color: $light_blue
+		border-left: 1px solid $dark_blue
+		border-right: 1px solid $dark_blue
 
 
 
@@ -130,7 +132,7 @@ footer
 	text-align: left
 	padding: 0
 	li 
-		margin: 3px 0
+		margin: 5px 0
 		a
 			line-height: 1.4em
 			color: $light_text
@@ -138,6 +140,9 @@ footer
 				margin-right: 5px
 				width: 1.5em
 				height: 1.5em
+		a.btn-warning 
+			color: #222
+
 		ul 
 			margin-left: .5em
 			border-left: 1px dotted $light_text
@@ -164,7 +169,27 @@ p.caret
 		img
 			opacity: .9
 			transition: transform .5s, opacity .5s
-		
+
+.cars-row.gallery 
+	margin-bottom: -100px
+	z-index: 1
+
+.cars-row.gallery.closed
+	margin-bottom: -10px
+
+.load-more
+	background: linear-gradient(to top, white, white 10%, transparent)
+	z-index: 2
+	position: relative
+
+	div
+		font-size: 1.5em
+		margin-top: -20px
+		img
+			height: 1em
+
+	//margin-top: -100px
+
 .blueish-bg
 	background: $light_blue
 	color: white
@@ -276,9 +301,9 @@ a.btn.dark:hover
 	padding: 0
 	li
 		display: inline-block
-		margin: 10px
+		//margin: 10px
 		max-width: 150px
-		min-width: 100px
+		//width: 150px
 		text-align: center
 	li > img
 		border-radius: 50%
@@ -292,11 +317,31 @@ a.btn.dark:hover
 	flex-wrap: wrap
 	display: flex
 	justify-content: center
-	align-items: top
 
 
 
 
+.infinite-scroll 
+	list-style: none
+	padding-left: 0
+	-webkit-padding-start: 0
+	padding: 0
+	overflow: hidden
+	min-height: inherit
+	height: 100%
+	display: flex
+
+	li
+		display: inline-block
+		margin: 10px
+		max-width: 150px
+		min-width: 150px
+		text-align: center
+	li > img
+		border-radius: 50%
+		margin-right: 10px
+		height: 100px
+		cursor: pointer
 
 
 
@@ -325,6 +370,11 @@ a.btn.dark:hover
 	
 	.donate
 		background-size: auto 100%
+
+	.really-footer
+		padding-bottom: 20px
+		text-align: center
+
 @media (min-width: 768px) 
 	.navbar-nav > li > a
 		padding: 15px 10px
@@ -374,6 +424,8 @@ a.btn.dark:hover
 	footer
 		padding-top: 25px
 		border-top: 1px solid $dark_blue
+	.really-footer
+		padding: 0
 
 @media (min-width: 992px)
 	#top-header

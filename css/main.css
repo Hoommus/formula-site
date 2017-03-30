@@ -90,7 +90,9 @@ a {
   .navbar-inverse .navbar-nav > .open > a,
   .navbar-inverse .navbar-nav > .open > a:hover,
   .navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: #252592; }
+    background-color: #252592;
+    border-left: 1px solid #1a1a65;
+    border-right: 1px solid #1a1a65; }
 
 .top-sponsors div:hover {
   transform: scale(1.05);
@@ -113,7 +115,7 @@ footer {
   text-align: left;
   padding: 0; }
   .footer-list li {
-    margin: 3px 0; }
+    margin: 5px 0; }
     .footer-list li a {
       line-height: 1.4em;
       color: #e0e0e0; }
@@ -121,6 +123,8 @@ footer {
         margin-right: 5px;
         width: 1.5em;
         height: 1.5em; }
+    .footer-list li a.btn-warning {
+      color: #222; }
     .footer-list li ul {
       margin-left: 0.5em;
       border-left: 1px dotted #e0e0e0;
@@ -145,6 +149,23 @@ p.caret {
 .cars-row div img {
   opacity: 0.9;
   transition: transform 0.5s, opacity 0.5s; }
+
+.cars-row.gallery {
+  margin-bottom: -100px;
+  z-index: 1; }
+
+.cars-row.gallery.closed {
+  margin-bottom: -10px; }
+
+.load-more {
+  background: linear-gradient(to top, white, white 10%, transparent);
+  z-index: 2;
+  position: relative; }
+  .load-more div {
+    font-size: 1.5em;
+    margin-top: -20px; }
+    .load-more div img {
+      height: 1em; }
 
 .blueish-bg {
   background: #252592;
@@ -241,9 +262,7 @@ a.btn.dark:hover {
   padding: 0; }
   .team-list li {
     display: inline-block;
-    margin: 10px;
     max-width: 150px;
-    min-width: 100px;
     text-align: center; }
   .team-list li > img {
     border-radius: 50%;
@@ -256,8 +275,28 @@ a.btn.dark:hover {
   height: 100%;
   flex-wrap: wrap;
   display: flex;
-  justify-content: center;
-  align-items: top; }
+  justify-content: center; }
+
+.infinite-scroll {
+  list-style: none;
+  padding-left: 0;
+  -webkit-padding-start: 0;
+  padding: 0;
+  overflow: hidden;
+  min-height: inherit;
+  height: 100%;
+  display: flex; }
+  .infinite-scroll li {
+    display: inline-block;
+    margin: 10px;
+    max-width: 150px;
+    min-width: 150px;
+    text-align: center; }
+  .infinite-scroll li > img {
+    border-radius: 50%;
+    margin-right: 10px;
+    height: 100px;
+    cursor: pointer; }
 
 @media (min-width: 320px) {
   .navbar {
@@ -275,7 +314,11 @@ a.btn.dark:hover {
     height: 40px; }
 
   .donate {
-    background-size: auto 100%; } }
+    background-size: auto 100%; }
+
+  .really-footer {
+    padding-bottom: 20px;
+    text-align: center; } }
 @media (min-width: 768px) {
   .navbar-nav > li > a {
     padding: 15px 10px; }
@@ -323,7 +366,10 @@ a.btn.dark:hover {
 
   footer {
     padding-top: 25px;
-    border-top: 1px solid #1a1a65; } }
+    border-top: 1px solid #1a1a65; }
+
+  .really-footer {
+    padding: 0; } }
 @media (min-width: 992px) {
   #top-header {
     margin-top: -400px; }
