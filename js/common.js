@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	$("#pause").fadeOut(1);
 	$("#top-one").height($(window).height() - 120);
 	/* setTimeout(() => {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini/i.test(navigator.userAgent) ) {
@@ -29,9 +28,10 @@ $(document).ready(function() {
 	}, 1000)
 	*/
 
-	$(".gallery-jq").hover(() => {
-		$(".gallery").animate({marginBottom: "-20px"}, 600);
-	}, () => {
-		$(".gallery").animate({marginBottom: "-100px"}, 600);
-	} );
+		
+	$(".load-more").hover(function() {
+		$(".load-more > div > img").css({transform: "rotate(180deg)"})
+	}, function() {
+		/* Stuff to do when the mouse leaves the element */
+	});
 });

@@ -140,6 +140,12 @@ p.caret {
 .footer-dropdown > ul {
   border-radius: 0; }
 
+.cars-row div > a {
+  color: white;
+  text-decoration: none; }
+.cars-row div > a:hover {
+  color: white;
+  text-decoration: none; }
 .cars-row div img {
   width: 100%; }
 .cars-row div img:hover {
@@ -149,23 +155,6 @@ p.caret {
 .cars-row div img {
   opacity: 0.9;
   transition: transform 0.5s, opacity 0.5s; }
-
-.cars-row.gallery {
-  margin-bottom: -100px;
-  z-index: 1; }
-
-.cars-row.gallery.closed {
-  margin-bottom: -10px; }
-
-.load-more {
-  background: linear-gradient(to top, white, white 10%, transparent);
-  z-index: 2;
-  position: relative; }
-  .load-more div {
-    font-size: 1.5em;
-    margin-top: -20px; }
-    .load-more div img {
-      height: 1em; }
 
 .blueish-bg {
   background: #252592;
@@ -223,6 +212,10 @@ p.caret {
   border: none;
   margin-top: 20px; }
 
+.btn.dark {
+  background: #1a1a65;
+  color: white; }
+
 a.btn.dark {
   background: #1a1a65;
   color: white; }
@@ -255,6 +248,9 @@ a.btn.dark:hover {
   margin-top: 20px;
   background: #222; }
 
+div.media > div > img {
+  width: 100%; }
+
 .team-list {
   list-style: none;
   padding-left: 0;
@@ -277,26 +273,34 @@ a.btn.dark:hover {
   display: flex;
   justify-content: center; }
 
-.infinite-scroll {
-  list-style: none;
-  padding-left: 0;
-  -webkit-padding-start: 0;
-  padding: 0;
-  overflow: hidden;
-  min-height: inherit;
-  height: 100%;
-  display: flex; }
-  .infinite-scroll li {
-    display: inline-block;
-    margin: 10px;
-    max-width: 150px;
-    min-width: 150px;
-    text-align: center; }
-  .infinite-scroll li > img {
-    border-radius: 50%;
-    margin-right: 10px;
-    height: 100px;
-    cursor: pointer; }
+.about-text {
+  font-size: 1.3em; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(180deg); } }
+@keyframes rotate-back {
+  0% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(0deg); } }
+.load-more {
+  margin-top: 20px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: transform 1s ease-out; }
+  .load-more div {
+    text-transform: uppercase;
+    font-size: 1.5em; }
+    .load-more div img {
+      height: 1em; }
+
+.load-more:hover > div > img {
+  animation-name: rotate;
+  animation-duration: 0.5s;
+  transition: transform 1s ease-out; }
 
 @media (min-width: 320px) {
   .navbar {
@@ -369,10 +373,11 @@ a.btn.dark:hover {
     border-top: 1px solid #1a1a65; }
 
   .really-footer {
-    padding: 0; } }
+    padding: 0;
+    text-align: initial; } }
 @media (min-width: 992px) {
   #top-header {
-    margin-top: -400px; }
+    margin-top: -200px; }
 
   .navbar-nav > li > a {
     padding: 25px 20px; }
