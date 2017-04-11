@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("#top-one").height($(window).height() - 120);
+	//$("#top-one").height($(window).height() - 120);
 	/* setTimeout(() => {
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini/i.test(navigator.userAgent) ) {
 		} else {

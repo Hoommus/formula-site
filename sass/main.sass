@@ -43,10 +43,6 @@ a:focus
 
 a
 	color: #223bc5
-
-#news
-	background-color: #FFF
-
 .flex-container
 	display: flex
 	align-items: stretch
@@ -55,40 +51,6 @@ a
 
 .about > p
 	font-size: 1.25em
-
-
-.news-card
-	margin: 0 20px
-	padding-bottom: 10px
-	background-color: #EEE
-	box-shadow: 0 0 5px rgba(0,0,0,0.2)
-	h3
-		font-size: 1.2em
-		display: inline-block
-	.more,
-	.date		
-		font-size: 1em
-		opacity: .8
-		float: right
-	.more
-		font-weight: bold	
-		bottom: 0 
-
-	a,
-	a:hover
-		cursor: pointer
-		text-decoration: none
-		margin-top: 3px
-	p
-		margin: 0
-		font-size: 1.2em
-
-.news-header
-	margin: 8px
-	text-transform: uppercase
-
-.news-button-row
-	padding: 40px 60px
 
 .navbar-inverse
 	background-color: $dark_blue
@@ -103,8 +65,8 @@ a
 	.navbar-nav > .open > a:hover, 
 	.navbar-nav > .open > a:focus
 		background-color: $light_blue
-		border-left: 1px solid $dark_blue
-		border-right: 1px solid $dark_blue
+		//border-left: 1px solid $dark_blue
+		//border-right: 1px solid $dark_blue
 
 
 
@@ -228,7 +190,7 @@ p.caret
 		font-family: Play, Roboto, Verdana, sans
 		color: white
 		text-transform: uppercase
-		text-shadow: 0 0 40px #be57c1, 2px 2px 5px black
+		text-shadow: 0 0 40px #330eb2, 2px 2px 5px black
 	.second
 		font-size: 1em
 	.third
@@ -326,25 +288,38 @@ div.media > div > img
 	0% 
 		transform: rotate(180deg)
 	100% 
-		transform: rotate(0deg)
+		transform: rotate(360deg)
 
 
 .load-more
 	margin-top: 20px
 	cursor: pointer
 	transform: rotate(0deg)
-	transition: transform 1s ease-out
+	transition: all .5s ease-out
 	div
 		text-transform: uppercase
 		font-size: 1.5em
+		transition: inherit
 		img
 			height: 1em
+			animation: rotate-back .5s
+			transition: all .5s ease-out
 .load-more:hover > div > img
 	animation-name: rotate
 	animation-duration: .5s
-	transition: transform 1s ease-out
+	transition: all .5s ease-out
 
+.btn-formula
+	color: $dark_blue !important
+	background: white
+	border: $dark_blue solid 1px
+	margin-top: 20px
+	margin-bottom: 15px
+	transition: background .3s
 
+.btn-formula:hover
+	background: #DDD
+	transition: background .3s
 
 //************************************
 //************************************
@@ -356,7 +331,7 @@ div.media > div > img
 		margin-bottom: 0
 	#top-one
 		padding: 20px 15px
-		min-height: 300px
+		height: 100vh
 	#top-header,
 	#sponsors
 		margin: 0
@@ -366,6 +341,14 @@ div.media > div > img
 	
 	.donate
 		background-size: auto 100%
+
+	.mid-align 
+		min-height: inherit
+		height: 100%
+		flex-wrap: wrap
+		display: flex
+		justify-content: center
+		align-items: center
 
 	.really-footer
 		padding-bottom: 20px
@@ -380,7 +363,7 @@ div.media > div > img
 		margin-left: 2px
 
 	.navbar-right 
-		font-size: 1.2em
+		font-size: 1.15em
 	
 	.navbar-brand > img
 		height: 40px
@@ -403,7 +386,7 @@ div.media > div > img
 			color: white
 			text-transform: uppercase
 		.first
-			font-size: 4em
+			font-size: 2.7em
 		.second
 			font-size: 2em
 		.third
@@ -423,6 +406,11 @@ div.media > div > img
 	.really-footer
 		padding: 0
 		text-align: initial
+	.btn-formula
+		margin-top: 10px
+		margin-bottom: 5px
+
+
 
 @media (min-width: 992px)
 	#top-header
@@ -432,11 +420,18 @@ div.media > div > img
 		padding: 25px 20px
 
 	.navbar-right 
-		font-size: 1.6em
+		font-size: 1.4em
 	
 	.navbar-brand > img
 		height: 60px
 
+
+@media (min-width: 1100px)
+	.btn-formula
+		margin-top: 20px
+		margin-bottom: 15px
+	.navbar-right 
+		font-size: 1.6em
 	//.col-md-5-margined
 		//width: calc(41% - 30px)
 		
